@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Now Showing</title>
+
+	<meta charset="utf-8">
+	<meta name="AVON Cinema" content="current movies">
+	<meta name="Now Showing" content="My Name is Khan,3-Iditos, The Dark Night,Perfume: The Story of a Murderer">
+
+	<!--Fonts from googlefornts-->
+
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+
+	<!--link to css and normalize file-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+
+<body>
+
+
+<div class="logo">
+<a href="home.html">
+	<img src="img/new.jpg">
+</a>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropbtn">Now Showing</a>
+			    <div class="dropdown-content">
+			      <a href="#two">The Dark Night Rises</a>
+			      <a href="#three">Interstellar</a>
+			    </div>
+		</li>
+
+		<li class="dropdown">
+		<a href="comingsoon.html">Coming Soon</a>
+				<div class="dropdown-content">
+			      <a href="comingsoon.html">National Treasure</a>
+			      <a href="comingsoon.html">Perfume: The Story of a Murderer</a>
+			      <a href="comingsoon.html">Pirates of the Caribbean: On Stranger Tides</a>
+			      <a href="comingsoon.html">Man of steel</a>
+
+			   	</div>
+		</li>
+
+		<li class="dropdown">
+		<a href="contact.html">Contact</a>
+				<div class="dropdown-content">
+			      <a href="https://www.facebook.com/avoncinema/" target="_blank">Facebook</a>
+			      <a href="https://twitter.com/avoncinema" target="_blank">Twitter</a>
+			   	</div>
+		</li>
+
+	</ul>
+</nav>
+
+<section id="one">
+<article class="wrapper">
+	<div class="onehalf">
+		<a href="#two">
+
+			<img src="img/2.jpg">
+
+			<div class="caption">
+				<a href="https://www.youtube.com/watch?v=g8evyE9TuYk" class="button">Watch Trailer</a>
+
+			</div>
+		</a>
+	</div>
+
+	<div class="onehalf">
+		<a href="#three">
+
+			<img src="img/19.jpg">
+
+			<div class="caption">
+
+				<a href="https://www.youtube.com/watch?v=2LqzF5WauAw" class="button">Watch Trailer</a>
+
+			</div>
+		</a>
+	</div>
+</article>
+
+</section>
+
+<section id="two">
+<article id="moviewrapper">
+
+	<h1 id="bat">The Dark Night Rises</h1>
+	
+		<p>
+
+		Date: 2/20/17<br><br>
+
+		Show Time: 9:00am 12:00pm 3:00pm 6:00pm 9:00pm<br><br>
+
+		Duration: 2h 45m<br><br>
+
+		It has been eight years since Batman (Christian Bale), in scollusion with Commissioner Gordon (Gary Oldman), vanished into the night. Assuming responsibility for the death of Harvey Dent, Batman sacrificed everything for what he and Gordon hoped would be the greater good. However, the arrival of a cunning cat burglar (Anne Hathaway) and a merciless terrorist named Bane (Tom Hardy) force Batman out of exile and into a battle he may not be able to win.<br><br>
+
+		IMDB Rating: 8.5/10
+
+		</p>
+
+		<a href="" class="button">Buy Tickets</a>
+
+
+</article>
+
+	
+</section>
+
+<section id="three">
+
+<article id="moviewrapper">
+
+	<h1 id="bat">Interstellar</h1>
+	
+		<p>
+
+		Date: 2/20/17<br><br>
+
+		Show Time: 9:00am 12:00pm 3:00pm 6:00pm 9:00pm<br><br>
+
+		Duration: 2h 49m<br><br>
+
+		Christopher Nolan’s "Interstellar," about astronauts traveling to the other end of the galaxy to find a new home to replace humanity’s despoiled home-world, is frantically busy and earsplittingly loud. It uses booming music to jack up the excitement level of scenes that might not otherwise excite. It features characters shoveling exposition at each other for almost three hours, and a few of those characters have no character to speak of: they’re mouthpieces for techno-babble and philosophical debate<br><br>
+
+		IMDB Rating: 8.6/10
+
+		</p>
+
+		<a href="" class="button">Buy Tickets</a>
+
+
+</article>
+
+
+	
+</section>
+
+
+<!-- Use the following code, if you want vertical scrolling. -->
+<script type="text/javascript" src="js/jquery.js"></script>		
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('a').bind('click',function(event){
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 500);
+			event.preventDefault();
+		});
+	});
+</script>
+
+
+
+
+
+
+</body>
+</html>
